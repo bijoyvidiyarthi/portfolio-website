@@ -643,6 +643,10 @@
        display: none;
    }
 
+   .hidden {
+       display: none;
+   }
+
    .success {
        background: rgba(40, 167, 69, 0.2);
        border: 1px solid rgba(40, 167, 69, 0.3);

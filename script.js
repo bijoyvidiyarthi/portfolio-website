@@ -9,10 +9,11 @@ var typed = new Typed('#element', {
     backDelay: 700,
     loop: true,
 });
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
 
-    // Get form elements
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    // Remove e.preventDefault() - we need to allow form submission
+    const form = e.target;
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
@@ -20,23 +21,27 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     const messageContainer = document.getElementById('formMessage');
 
     // Simple validation
-    if (name && email && subject && message) {
-        // Show success message
-        messageContainer.className = 'form-message success';
-        messageContainer.innerHTML = '<i class="fas fa-check-circle"></i> Your message has been sent successfully! I\'ll get back to you soon.';
-        messageContainer.style.display = 'block';
+    if (!name || !email || !subject || !message) {
+        // Prevent submission if validation fails
+        e.preventDefault();
 
-        // Reset form
-        document.getElementById('contactForm').reset();
-
-        // Hide message after 5 seconds
-        setTimeout(() => {
-            messageContainer.style.display = 'none';
-        }, 5000);
-    } else {
         // Show error message
         messageContainer.className = 'form-message error';
         messageContainer.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please fill in all required fields.';
         messageContainer.style.display = 'block';
+    } else {
+        // Show success message immediately
+        messageContainer.className = 'form-message success';
+        messageContainer.innerHTML = '<i class="fas fa-check-circle"></i> Sending your message...';
+        messageContainer.style.display = 'block';
+
+        // Optional: Add a small delay to let users see the message
+        setTimeout(() => {
+            // Form will submit normally to Netlify
+            // We don't need to do anything here
+        }, 1500);
+
+        // Let the form submit to Netlify normally
+        // Don't reset the form - Netlify needs the data
     }
 });
