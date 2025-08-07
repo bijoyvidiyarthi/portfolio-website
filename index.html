@@ -4,64 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="png/favIcon.png" id="favIcon">
+    <title>Aryaan Badhon - Developer Portfolio</title>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Aryaan(Badhon)- Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
     <style>
-        /* Add this to your style.css or within a <style> tag in the head */
+
     </style>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
-            <div class="left">Badhon's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li class="hover-underline"><a href="#home">Home</a></li>
-                    <li class="hover-underline"><a href="#about">About</a></li>
-                    <li class="hover-underline"><a href="#projects">Projects</a></li>
-                    <li class="hover-underline"><a href="#skills">Skills</a></li>
-                    <li class="hover-underline"><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
+            <div class="logo">Badhon's Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section class="section first">
-            <div class="about">
-                <div class="about-txt" id="sec-1">
-                    <span id="f1">Hello! </span>
-                    <span id="f2"> I'm <span class="c-text">Aryaan</span></span>
-                </div>
 
-                <div class="about-txt" id="sec-2">
-                    <div class="middle-txt">and I'm a Passionate</div>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Aryaan Badhon</span></h1>
+                <div class="typing-container">
                     <span id="element"></span>
                 </div>
-                <div class="about-txt" id="sec-3">
-                    <p>I create efficient web solutions using modern technologies. My focus is on:</p>
-                    <ul class="expertise-list">
-                        <li>Developing responsive interfaces with HTML/CSS</li>
-                        <li>Building interactive experiences with JavaScript</li>
-                        <li>Crafting robust backend systems with PHP/Laravel</li>
-                    </ul>
-                    <p>Explore my projects below to see practical applications of these skills.</p>
-                </div>
+                <p>Creating efficient solutions with modern technologies</p>
+                <a href="#projects" class="btn">View My Work</a>
             </div>
-            <div class="image">
-                <img src="png/web3.png" alt="Web Developer" height="300px">
+            <div class="hero-image">
+                <img src="png/web3.png" alt="Web Development">
             </div>
         </section>
-        <section id="projects" class="second section ">
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
             <h2 class="section-title">Projects</h2>
             <div class="projects-container">
-                <!-- We'll add projects here -->
-                <!-- Project card-1 -->
+                <!-- Project 1 -->
                 <div class="project-card">
                     <h3>Netflix UI Clone</h3>
-                    <img class="project-img img1" src="projectss/netflix-screenshot.jpg" alt="Netflix clone">
-
+                    <img class="project-img" src="projectss/netflix-screenshot.jpg" alt="Netflix clone">
                     <div class="tech-tags">
                         <ul class="tags">
                             <li>HTML5</li>
@@ -70,23 +66,19 @@
                         </ul>
                     </div>
                     <div class="proj-txt">
-                        <p>Responsive recreation with dark mode toggle...</p>
+                        <p>Responsive recreation with dark mode toggle and interactive elements.</p>
                     </div>
-
                     <div class="links">
-                        <a href="github-link">GitHub</a>
-                        <a href="live-demo">Live Demo</a>
+                        <a href="https://github.com/bijoyvidiyarthi/Netflix-UI-Clone-Frontend-with-js-project-for-beginners"
+                            target="_blank">GitHub</a>
+                        <a href="https://netfli0xclone-view.netlify.app/" target="_blank">Live Demo</a>
                     </div>
-
                 </div>
 
-                <!-- Project card-2 -->
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <!-- Project card template -->
                     <h3>Rock Paper Scissors</h3>
-                    <img class="project-img img1" src="projectss/Rock-Paper-Scissors_game.jpg"
-                        alt="Rock Paper Scissors">
-
+                    <img class="project-img" src="projectss/Rock-Paper-Scissors_game.jpg" alt="Rock Paper Scissors">
                     <div class="tech-tags">
                         <ul class="tags">
                             <li>JavaScript</li>
@@ -96,46 +88,38 @@
                         </ul>
                     </div>
                     <div class="proj-txt">
-                        <p>
-                            Interactive game interface with real-time feedback
-                            Score tracking with localStorage persistence..
-                        </p>
+                        <p>Interactive game with real-time feedback and localStorage score tracking.</p>
                     </div>
-
                     <div class="links">
-                        <a href="github-link">GitHub</a>
-                        <a href="live-demo">Live Demo</a>
+                        <a href="https://github.com/bijoyvidiyarthi/rock-paper-scissors-game" target="_blank">GitHub</a>
+                        <a href="https://rock-paper-scissors-gameby-js.netlify.app/" target="_blank">Live Demo</a>
                     </div>
                 </div>
 
-                <!-- Project card-3 -->
+                <!-- Project 3 -->
                 <div class="project-card">
-                    <!-- Project card template -->
-                    <h3>Netflix UI Clone</h3>
-                    <img class="project-img img1" src="projectss/netflix-screenshot.jpg" alt="Netflix clone">
-
+                    <h3>Weather Dashboard</h3>
+                    <img class="project-img" src="projectss/weather-app.jpg" alt="Weather Dashboard">
                     <div class="tech-tags">
                         <ul class="tags">
-                            <li>HTML5</li>
-                            <li>CSS-Grid</li>
+                            <li>API Integration</li>
+                            <li>JavaScript</li>
                             <li>Responsive Design</li>
                         </ul>
                     </div>
                     <div class="proj-txt">
-                        <p>Responsive recreation with dark mode toggle...</p>
+                        <p>Real-time weather data with 5-day forecast using OpenWeather API.</p>
                     </div>
-
                     <div class="links">
-                        <a href="github-link">GitHub</a>
-                        <a href="live-demo">Live Demo</a>
+                        <a href="#" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Live Demo</a>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section id="skills" class="skills-section third section">
-
+        <!-- Skills Section -->
+        <section id="skills" class="section">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-container">
                 <!-- Web Development -->
@@ -231,25 +215,22 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <section id="about" class="about-section fourth section">
+
+        <!-- About Section -->
+        <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
                 <p>Self-taught developer focused on building clean, efficient Laravel applications. Currently mastering
                     Eloquent ORM and API development. Passionate about solving real-world problems through code.</p>
+                <p>With a strong foundation in both frontend and backend technologies, I create comprehensive solutions
+                    that deliver exceptional user experiences while maintaining robust and scalable architectures.</p>
             </div>
-
         </section>
 
-
-        <section id="contact" class="contact-section fifth section">
-            <div class="contact-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p>Have a project in mind or want to discuss opportunities? I'm currently available for freelance
-                    work and full-time positions. Let's connect and create something amazing together!</p>
-            </div>
-
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-card">
@@ -262,7 +243,6 @@
                                     <p>Dhaka, Bangladesh</p>
                                 </div>
                             </div>
-
                             <div class="detail-item">
                                 <i class="fas fa-envelope"></i>
                                 <div>
@@ -270,7 +250,6 @@
                                     <a href="mailto:badhondhar0@gmail.com">badhondhar0@gmail.com</a>
                                 </div>
                             </div>
-
                             <div class="detail-item">
                                 <i class="fas fa-phone"></i>
                                 <div>
@@ -284,74 +263,113 @@
                     <div class="info-card">
                         <h3><i class="fas fa-share-alt"></i> Connect With Me</h3>
                         <p>Follow me on social media to stay updated with my latest projects and insights.</p>
-
                         <div class="social-links">
-                            <a href="https://github.com/bijoyvidiyarthi" title="GitHub"><i
+                            <a href="https://github.com/bijoyvidiyarthi" target="_blank" title="GitHub"><i
                                     class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/badhon-dhar-172589178/" title="LinkedIn"><i
-                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/badhon-dhar-172589178/" target="_blank"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
                             <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="map-container">
-                        <div class="map-placeholder">
-                            <i class="fas fa-map-marked-alt"></i>
-                            <p>Dhaka, Bangladesh</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <div class="form-card">
-                        <form name="contact" id="contactForm" method="POST" data-netlify="true"
-                            netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="contact">
-                            <p class="hidden">
-                                <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                            </p>
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" name="name" id="name" class="form-control"
-                                    placeholder="Enter your name" required>
-                            </div>
+                    <form name="contact" id="contactForm" method="POST" data-netlify="true"
+                        netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" class="form-control"
+                                placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" name="email" id="email" class="form-control"
-                                    placeholder="Enter your email" required>
-                            </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <i class="fas fa-arrow-up"></i>
+            </div>
 
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" name="subject" id="subject" class="form-control"
-                                    placeholder="What's this about?" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" class="form-control"
-                                    placeholder="Tell me about your project or inquiry..." required></textarea>
-                            </div>
-
-                            <button type="submit" class="submit-btn">
-                                <i class="fas fa-paper-plane"></i> Send Message
-                            </button>
-
-                            <div id="formMessage" class="form-message"></div>
-                        </form>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>About Me</h3>
+                    <p>A passionate developer focused on creating efficient web solutions with Laravel and modern
+                        technologies. Dedicated to solving real-world problems through clean code.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/bijoyvidiyarthi" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/badhon-dhar-172589178/" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</a></li>
+                        <li><a href="mailto:badhondhar0@gmail.com"><i class="fas fa-envelope"></i>
+                                badhondhar0@gmail.com</a></li>
+                        <li><a href="tel:+8801860570567"><i class="fas fa-phone"></i> +88 01860-570-567</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Development Focus</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> Laravel Development</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i> Responsive Design</a></li>
+                        <li><a href="#"><i class="fas fa-database"></i> Database Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-server"></i> API Integration</a></li>
+                    </ul>
                 </div>
             </div>
 
-        </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <div class="copyright">
+                <p>&copy; 2023 Aryaan Badhon. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
-    <script>
-
-    </script>
 </body>
 
 </html>

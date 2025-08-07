@@ -1,13 +1,13 @@
-
+// Initialize Typed.js
 var typed = new Typed('#element', {
     strings: [
-        '<i>Web</i> Developer<span class="gray-text"> .../></span>',
-        'Laravel Developer<span class="gray-text"> .../></span>'
+        '<h2>Laravel Developer<span class="gray-text"> .../></span></h2>',
+        ' <h2>Web Developer<span class="gray-text"> .../></span>'
     ],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 700,
-    loop: true,
+    loop: true
 });
 
 
