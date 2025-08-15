@@ -1,13 +1,15 @@
 // Initialize Typed.js
+// Update your Typed.js initialization to this
 var typed = new Typed('#element', {
     strings: [
-        '<h2>Laravel Developer<span class="gray-text"> .../></span></h2>',
-        ' <h2>Web Developer<span class="gray-text"> .../></span>'
+        'Laravel Developer<span class="gray-text"> .../></span>',
+        'Web Developer<span class="gray-text"> .../></span>'
     ],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 700,
-    loop: true
+    loop: true,
+   // showCursor: false  // Disable default cursor
 });
 
 

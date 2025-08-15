@@ -172,18 +172,25 @@
             color: var(--txt-color2);
         }
 
-        #element>h2 {
+        #element {
             font-size: 2rem;
             font-weight: 400;
             color: #a0a0ff;
         }
 
-        #element>h2>.gray-text {
+        #element .gray-text {
             font-size: 2rem;
             color: rgb(139, 139, 139);
         }
 
+        .typing-container {
+            min-height: 80px;
+            margin: 20px 0;
+        }
+
         .typed-cursor {
+            font-size: 2rem;
+            vertical-align: top;
             color: var(--txt-color2);
         }
 
@@ -193,16 +200,6 @@
             max-width: 600px;
             color: #d1d1ff;
         }
-
-        .typing-container {
-            min-height: 80px;
-            margin: 20px 0;
-        }
-
-
-
-
-
 
         .expertise-list {
             margin: 20px 0;
@@ -493,7 +490,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             border: 1px solid rgba(125, 211, 252, 0.1);
         }
-    
+
 
         .hidden {
             display: none;
