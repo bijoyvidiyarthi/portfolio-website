@@ -4,15 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aryaan Dhar (Badhon) - Professional Web Developer & Laravel Specialist. Creating efficient web solutions with modern technologies including HTML5, CSS3, JavaScript, and PHP.">
+    <meta name="keywords" content="Aryaan Dhar (Badhon), Web Developer, Laravel Developer, PHP Developer, Frontend Developer, Portfolio, HTML5, CSS3, JavaScript, Bangladesh Developer">
+    <meta name="author" content="Aryaan Dhar (Badhon)">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://aryaan-dhar-portfolio.netlify.app">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Aryaan Dhar Badhon - Web Developer Portfolio">
+    <meta property="og:description" content="Professional Web Developer specializing in Laravel, PHP, and modern frontend technologies. View my projects and skills.">
+    <meta property="og:image" content="https://aryaan-dhar-portfolio.netlify.app">
+    <meta property="og:url" content="https://aryaan-dhar-portfolio.netlify.app">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aryaan Dhar Badhon - Web Developer Portfolio">
+    <meta name="twitter:description" content="Professional Web Developer specializing in Laravel, PHP, and modern frontend technologies.">
+    <meta name="twitter:image" content="https://x.com/AryaanDhar72455/photo">
+    
     <link rel="icon" type="image/png" href="png/favIcon.png" id="favIcon">
-    <title>Aryaan Badhon - Developer Portfolio</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Aryaan Dhar Badhon - Web Developer & Laravel Specialist | Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </noscript>
+    
     <!-- Typed.js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aryaan Dhar Badhon",
+      "jobTitle": "Web Developer",
+      "url": "https://www.aryaanbadhon.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhaka",
+        "addressCountry": "Bangladesh"
+      },
+      "email": "mailto:badhondhar0@gmail.com",
+      "telephone": "+8801860570567",
+      "sameAs": [
+        "https://github.com/bijoyvidiyarthi",
+        "https://www.linkedin.com/in/badhon-dhar-172589178/"
+      ],
+      "knowsAbout": ["HTML5", "CSS3", "JavaScript", "PHP", "Laravel", "Web Development", "Responsive Design", "API Integration"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance Web Developer"
+      }
+    }
+    </script>
+    
     <style>
-
+        /* Inline critical CSS for above-the-fold content */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        /* Additional critical CSS would go here */
     </style>
 </head>
 
@@ -20,7 +86,7 @@
     <!-- Header Section -->
     <header>
         <nav>
-            <div class="logo">Badhon's Portfolio</div>
+            <div class="logo"> Badhon's Portfolio</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -44,20 +110,18 @@
                 <a href="#projects" class="btn">View My Work</a>
             </div>
             <div class="hero-image">
-                <img src="png/web3.png" alt="Web Development">
+                <img src="png/web3.png" alt="Aryaan Badhon - Web Developer creating modern web applications" loading="eager">
             </div>
-        </section>
-
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Web Development Projects</h2>
             <div class="projects-container">
                 <!-- Project 1 -->
                 <div class="project-card">
                     <h3>Netflix UI Clone</h3>
-                    <img class="project-img" src="projectss/netflix-screenshot.jpg" alt="Netflix clone">
+                    <img class="project-img" src="projectss/netflix-screenshot.jpg" alt="Netflix UI Clone project by Aryaan Badhon" loading="lazy">
                     <div class="tech-tags">
                         <ul class="tags">
                             <li>HTML5</li>
@@ -78,8 +142,8 @@
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <h3>Rock Paper Scissors</h3>
-                    <img class="project-img" src="projectss/Rock-Paper-Scissors_game.jpg" alt="Rock Paper Scissors">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <img class="project-img" src="projectss/Rock-Paper-Scissors_game.jpg" alt="Rock Paper Scissors JavaScript game by Aryaan Badhon" loading="lazy">
                     <div class="tech-tags">
                         <ul class="tags">
                             <li>JavaScript</li>
@@ -102,7 +166,7 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <h3>Weather Dashboard</h3>
-                    <img class="project-img" src="projectss/weather-app.jpg" alt="Weather Dashboard">
+                    <img class="project-img" src="projectss/weather-app.jpg" alt="Weather Dashboard application by Aryaan Badhon" loading="lazy">
                     <div class="tech-tags">
                         <ul class="tags">
                             <li>API Integration</li>
@@ -128,31 +192,31 @@
                 <!-- Web Development -->
                 <div class="skill-category">
                     <h3 class="category-title">
-                        <i class="fas fa-laptop-code"></i> Web Development
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i> Web Development
                     </h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>HTML5</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%"></div>
+                                <div class="skill-level" style="width: 90%"><span class="sr-only">90% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>CSS3</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
+                                <div class="skill-level" style="width: 85%"><span class="sr-only">85% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>JavaScript</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
+                                <div class="skill-level" style="width: 80%"><span class="sr-only">80% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>PHP</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%"></div>
+                                <div class="skill-level" style="width: 70%"><span class="sr-only">70% proficiency</span></div>
                             </div>
                         </div>
                     </div>
@@ -161,25 +225,25 @@
                 <!-- Frameworks & Libraries -->
                 <div class="skill-category">
                     <h3 class="category-title">
-                        <i class="fas fa-cubes"></i> Frameworks & Libraries
+                        <i class="fas fa-cubes" aria-hidden="true"></i> Frameworks & Libraries
                     </h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Laravel</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
+                                <div class="skill-level" style="width: 75%"><span class="sr-only">75% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>Bootstrap</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
+                                <div class="skill-level" style="width: 85%"><span class="sr-only">85% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>jQuery</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 65%"></div>
+                                <div class="skill-level" style="width: 65%"><span class="sr-only">65% proficiency</span></div>
                             </div>
                         </div>
                     </div>
@@ -188,31 +252,31 @@
                 <!-- Tools & Technologies -->
                 <div class="skill-category">
                     <h3 class="category-title">
-                        <i class="fas fa-tools"></i> Tools & Technologies
+                        <i class="fas fa-tools" aria-hidden="true"></i> Tools & Technologies
                     </h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Git & GitHub</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
+                                <div class="skill-level" style="width: 80%"><span class="sr-only">80% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>VS Code</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%"></div>
+                                <div class="skill-level" style="width: 90%"><span class="sr-only">90% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>MySQL</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 70%"></div>
+                                <div class="skill-level" style="width: 70%"><span class="sr-only">70% proficiency</span></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span>RESTful APIs</span>
                             <div class="skill-bar">
-                                <div class="skill-level" style="width: 65%"></div>
+                                <div class="skill-level" style="width: 65%"><span class="sr-only">65% proficiency</span></div>
                             </div>
                         </div>
                     </div>
@@ -224,10 +288,9 @@
         <section id="about" class="section">
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
-                <p>Self-taught developer focused on building clean, efficient Laravel applications. Currently mastering
-                    Eloquent ORM and API development. Passionate about solving real-world problems through code.</p>
-                <p>With a strong foundation in both frontend and backend technologies, I create comprehensive solutions
-                    that deliver exceptional user experiences while maintaining robust and scalable architectures.</p>
+                <p>I'm Aryaan Badhon, a self-taught web developer from Dhaka, Bangladesh, focused on building clean, efficient Laravel applications. Currently mastering Eloquent ORM and API development. Passionate about solving real-world problems through code.</p>
+                <p>With a strong foundation in both frontend and backend technologies, I create comprehensive solutions that deliver exceptional user experiences while maintaining robust and scalable architectures. My expertise includes HTML5, CSS3, JavaScript, PHP, and the Laravel framework.</p>
+                <p>As a dedicated web developer in Bangladesh, I'm committed to creating web solutions that meet both user needs and business objectives.</p>
             </div>
         </section>
 
@@ -237,17 +300,17 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-card">
-                        <h3><i class="fas fa-envelope"></i> Contact Information</h3>
+                        <h3><i class="fas fa-envelope" aria-hidden="true"></i> Contact Information</h3>
                         <div class="contact-details">
                             <div class="detail-item">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 <div>
                                     <h4>Location</h4>
                                     <p>Dhaka, Bangladesh</p>
                                 </div>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                                 <div>
                                     <h4>Email</h4>
                                     <a href="mailto:badhondhar0@gmail.com" target="_blank"
@@ -255,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="detail-item">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                                 <div>
                                     <h4>Phone</h4>
                                     <a href="tel:+8801860570567" target="_blank" rel="noopener noreferrer">+88
@@ -266,15 +329,15 @@
                     </div>
 
                     <div class="info-card">
-                        <h3><i class="fas fa-share-alt"></i> Connect With Me</h3>
+                        <h3><i class="fas fa-share-alt" aria-hidden="true"></i> Connect With Me</h3>
                         <p>Follow me on social media to stay updated with my latest projects and insights.</p>
                         <div class="social-links">
                             <a href="https://github.com/bijoyvidiyarthi" target="_blank" rel="noopener noreferrer"
-                                title="GitHub"><i class="fab fa-github"></i></a>
+                                title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
                             <a href="https://www.linkedin.com/in/badhon-dhar-172589178/" target="_blank"
-                                rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
                         </div>
                     </div>
                 </div>
@@ -307,7 +370,7 @@
                                 placeholder="Tell me about your project or inquiry..." required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
                         </button>
                         <div id="formMessage" class="form-message"></div>
                     </form>
@@ -320,68 +383,83 @@
     <footer>
         <div class="footer-container">
             <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-arrow-up" aria-hidden="true"></i><span class="sr-only">Back to top</span>
             </div>
 
             <div class="footer-columns">
                 <div class="footer-col">
                     <h3>About Me</h3>
-                    <p>A passionate developer focused on creating efficient web solutions with Laravel and modern
-                        technologies. Dedicated to solving real-world problems through clean code.</p>
+                    <p>A passionate web developer from Bangladesh focused on creating efficient web solutions with Laravel and modern technologies. Dedicated to solving real-world problems through clean code.</p>
                     <div class="social-icons">
                         <a href="https://github.com/bijoyvidiyarthi" title="GitHub" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
                         <a href="https://www.linkedin.com/in/badhon-dhar-172589178/" title="LinkedIn" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
                         <a href="#" title="Twitter" target="_blank" rel="noopener noreferrer"><i
-                                class="fab fa-twitter"></i></a>
+                                class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
                         <a href="#" title="Instagram" target="_blank" rel="noopener noreferrer"><i
-                                class="fab fa-instagram"></i></a>
+                                class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
                     </div>
                 </div>
 
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
-                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#home"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right" aria-hidden="true"></i> Projects</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right" aria-hidden="true"></i> Skills</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right" aria-hidden="true"></i> About</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="footer-links">
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 Dhaka, Bangladesh</a></li>
                         <li><a href="mailto:badhondhar0@gmail.com" target="_blank" rel="noopener noreferrer"><i
-                                    class="fas fa-envelope"></i>
+                                    class="fas fa-envelope" aria-hidden="true"></i>
                                 badhondhar0@gmail.com</a></li>
                         <li><a href="tel:+8801860570567" target="_blank" rel="noopener noreferrer"><i
-                                    class="fas fa-phone"></i> +88 01860-570-567</a></li>
+                                    class="fas fa-phone" aria-hidden="true"></i> +88 01860-570-567</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h3>Development Focus</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-code"></i> Laravel Development</a></li>
-                        <li><a href="#"><i class="fas fa-mobile-alt"></i> Responsive Design</a></li>
-                        <li><a href="#"><i class="fas fa-database"></i> Database Solutions</a></li>
-                        <li><a href="#"><i class="fas fa-server"></i> API Integration</a></li>
+                        <li><a href="#"><i class="fas fa-code" aria-hidden="true"></i> Laravel Development</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Responsive Design</a></li>
+                        <li><a href="#"><i class="fas fa-database" aria-hidden="true"></i> Database Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-server" aria-hidden="true"></i> API Integration</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="copyright">
                 <p>&copy; 2023 Aryaan Badhon. All Rights Reserved.</p>
-                <p>Designed with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+                <p>Designed with <i class="fas fa-heart" aria-hidden="true"></i> and <i class="fas fa-code" aria-hidden="true"></i></p>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    
+    <!-- Additional SEO-friendly content that's hidden but accessible to screen readers -->
+    <div class="sr-only">
+        <h2>Aryaan Dhar Badhon - Web Developer Skills</h2>
+        <p>Professional web developer specializing in frontend and backend development with expertise in HTML5, CSS3, JavaScript, PHP, and Laravel framework. Based in Dhaka, Bangladesh, offering web development services including responsive web design, API integration, and database solutions.</p>
+        
+        <h3>Services Offered:</h3>
+        <ul>
+            <li>Custom Web Application Development</li>
+            <li>Laravel PHP Development</li>
+            <li>Responsive Website Design</li>
+            <li>Frontend Development with HTML5, CSS3, JavaScript</li>
+            <li>API Integration and Development</li>
+            <li>Database Design and Implementation</li>
+        </ul>
+    </div>
 </body>
 
 </html>
