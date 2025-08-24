@@ -97,6 +97,7 @@
             font-size: 2.5rem;
             margin-bottom: 50px;
             position: relative;
+            color: #fff;
         }
 
         .section-title::after {
