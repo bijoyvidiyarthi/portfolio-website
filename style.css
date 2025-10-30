@@ -157,10 +157,9 @@
         }
 
         .hero-image img {
-            max-width: 100%;
-            border-radius: 15px;
+            max-width: 80%;
             box-shadow: 0 10px 30px rgba(0, 0, 33, 0.5);
-            border: 2px solid var(--txt-color2);
+           
         }
 
         .hero h1 {
